@@ -6,6 +6,7 @@ dependencies = [
     "ruff>=0.6",
     "black>=24.8",
     "streamlit>=1.60.0",
+    "httpx"
 ]
 
 [tool.uv.workspace]

@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Reviewer: review current file",
+      "type": "shell",
+      "command": "reviewer file \"${file}\"",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    },
+    {
+      "label": "Reviewer: review whole project",
+      "type": "shell",
+      "command": "reviewer project \"${workspaceFolder}\"",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    }
+  ]
+}

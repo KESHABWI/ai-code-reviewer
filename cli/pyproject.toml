@@ -1,0 +1,19 @@
+[project]
+name = "reviewer-cli"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.12",
+    "httpx>=0.27",
+    "rich>=13.8",
+]
+
+[project.scripts]
+reviewer = "reviewer_cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["reviewer_cli"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
